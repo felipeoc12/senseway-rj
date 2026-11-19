@@ -14,7 +14,7 @@ FIAP · Global Solution 2026.2 · Desafio CitizenTech · Engenharia de Software,
 | **Problema, em uma frase** | Barreiras nas calçadas, como piso tátil interrompido, buracos e obstáculos fixos, nem sempre são percebidas a tempo por quem não enxerga. |
 | **Como funciona** | Uma pulseira com sensor ultrassônico avisa, por som e luz (vibração no produto físico), quando há um objeto à frente. Um site permite simular a pulseira e registrar barreiras de forma comunitária. |
 | **O que cada parte faz** | **Edge:** circuito no Wokwi que mede, decide e alerta sem internet. **Python:** classifica uma lista de leituras e calcula estatísticas. **Front-end:** landing page em HTML e CSS. **Web:** JavaScript do simulador, do registro comunitário e do tema claro/escuro. |
-| **Link do repositório** | _cole aqui o link do GitHub_ |
+| **Link do repositório** | https://github.com/felipeoc12/senseway-rj |
 | **Indicador de impacto** | % de leituras simuladas classificadas corretamente; % de leituras inválidas sinalizadas como FALHA; número de barreiras demonstrativas registradas e consultadas |
 | **ODS conectados** | ODS 10 (Redução das Desigualdades) e ODS 11 (Cidades e Comunidades Sustentáveis) |
 
@@ -84,7 +84,7 @@ Todo o código está em `web/js/script.js`, comentado e dividido em quatro parte
 
 O circuito da pulseira (Arduino Uno, sensor HC-SR04, LEDs, buzzer e botão de teste de falha) foi entregue separadamente, como simulação no Wokwi.
 
-- Simulação no Wokwi: _cole aqui o link público_
+- Simulação no Wokwi: https://wokwi.com/projects/481117937897935873
 
 ## Fontes dos dados citados
 
