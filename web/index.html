@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SenseWay RJ: pulseira de percepção de proximidade e registro comunitário de barreiras nas calçadas de Madureira, Rio de Janeiro.">
+  <title>SenseWay RJ · Perceber antes de tocar</title>
+
+  <!-- Atkinson Hyperlegible: fonte criada para leitores com baixa visão -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+  <link rel="icon" href="imagens/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Atalho para quem navega por teclado ou leitor de tela -->
+  <a class="pular-conteudo" href="#conteudo">Pular para o conteúdo</a>
+
+  <!-- ============================ CABEÇALHO ============================ -->
+  <header class="cabecalho">
+    <div class="container cabecalho__interno">
+      <a class="marca" href="#inicio" aria-label="SenseWay RJ, voltar ao início">
+        <img src="imagens/logo.svg" alt="" width="36" height="36">
+        <span>SenseWay <strong>RJ</strong></span>
+      </a>
+
+      <button class="menu-botao" id="menu-botao" type="button"
+              aria-expanded="false" aria-controls="menu-principal">
+        <span class="menu-botao__icone" aria-hidden="true"></span>
+        <span class="menu-botao__texto">Menu</span>
+      </button>
+
+      <nav class="navegacao" aria-label="Navegação principal">
+        <ul class="navegacao__lista" id="menu-principal">
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#problema">O problema</a></li>
+          <li><a href="#como-funciona">Como funciona</a></li>
+          <li><a href="#simulador">Simulador</a></li>
+          <li><a href="#comunidade">Comunidade</a></li>
+        </ul>
+      </nav>
+
+      <button class="tema-botao" id="tema-botao" type="button" aria-pressed="false">
+        <svg class="tema-botao__icone" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12 3a9 9 0 1 0 9 9 7 7 0 0 1-9-9z" fill="currentColor"/>
+        </svg>
+        <span id="tema-texto">Modo escuro</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="conteudo">
+
+    <!-- ============================ 1. INÍCIO ============================ -->
+    <section class="secao hero" id="inicio" aria-labelledby="titulo-inicio">
+      <div class="container hero__grade">
+        <div class="hero__texto">
+          <p class="selo">CitizenTech · Madureira, Rio de Janeiro</p>
+          <h1 id="titulo-inicio">Perceber o obstáculo <span class="destaque">antes de tocar nele.</span></h1>
+          <p class="hero__resumo">
+            O SenseWay RJ une uma <strong>pulseira que avisa quando há algo à frente</strong>
+            e um <strong>canal comunitário</strong> para registrar barreiras nas calçadas.
+            Feito para pessoas com deficiência visual que circulam entre a estação,
+            o Mercadão e o comércio de Madureira.
+          </p>
+          <div class="hero__acoes">
+            <a class="botao botao--primario" href="#simulador">Testar o simulador</a>
+            <a class="botao botao--secundario" href="#comunidade">Registrar uma barreira</a>
+          </div>
+          <ul class="hero__fatos" aria-label="Destaques da solução">
+            <li><strong>Sem internet</strong> o alerta funciona no próprio dispositivo</li>
+            <li><strong>3 níveis</strong> de aviso: livre, atenção e próximo</li>
+            <li><strong>Falha nunca vira "livre"</strong></li>
+          </ul>
+        </div>
+
+        <figure class="hero__figura">
+          <!-- Para usar uma foto real: troque o src por imagens/sua-foto.jpg e atualize o crédito -->
+          <img src="imagens/hero-pulseira.svg"
+               alt="Ilustração da pulseira SenseWay emitindo ondas de som em direção a um obstáculo na calçada"
+               width="560" height="460">
+          <figcaption>Ilustração conceitual. Protótipo simulado, não é um produto à venda.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============================ 2. O PROBLEMA ============================ -->
+    <section class="secao secao--alternada" id="problema" aria-labelledby="titulo-problema">
+      <div class="container">
+        <header class="secao__cabecalho">
+          <p class="secao__numero">01 · O problema</p>
+          <h2 id="titulo-problema">Uma calçada pode ser um obstáculo antes mesmo da viagem começar.</h2>
+          <p>
+            Buracos, piso tátil interrompido, obras e objetos fixos no caminho são
+            barreiras documentadas no Rio. Para quem não enxerga, cada uma delas
+            pode significar uma queda ou um desvio perigoso.
+          </p>
+        </header>
+
+        <div class="dados">
+          <article class="dado">
+            <p class="dado__numero">29.490</p>
+            <p class="dado__texto">reclamações sobre calçadas no Portal 1746, em todo o município do Rio, entre jul/2023 e jul/2025.</p>
+            <p class="dado__fonte">Fonte: Câmara Municipal do Rio, audiência pública de 04/09/2025.</p>
+          </article>
+          <article class="dado">
+            <p class="dado__numero">Piso tátil</p>
+            <p class="dado__texto">com falhas e interrupções na Estação Madureira, além de problemas em elevador e escada rolante.</p>
+            <p class="dado__fonte">Fonte: fiscalização do PROCON-RJ / SEDCON, 13/05/2026.</p>
+          </article>
+          <article class="dado">
+            <p class="dado__numero">2025</p>
+            <p class="dado__texto">Madureira aparece entre os bairros com reclamações sobre calçadas.</p>
+            <p class="dado__fonte">Fonte: Mobilize Brasil.</p>
+          </article>
+        </div>
+        <p class="aviso-dados">
+          O número de 29.490 é da cidade inteira, não só de Madureira. Os dados acima
+          vêm de fontes públicas e não foram produzidos pela equipe.
+        </p>
+
+        <div class="problema__grade">
+          <figure class="problema__figura">
+            <!-- Para usar uma foto real: troque o src por imagens/calcada.jpg e atualize o crédito -->
+            <img src="imagens/calcada.svg"
+                 alt="Ilustração de uma calçada com piso tátil interrompido, um buraco e um poste no meio do caminho"
+                 width="520" height="360" loading="lazy">
+            <figcaption>Ilustração: barreiras comuns em calçadas.</figcaption>
+          </figure>
+
+          <div class="cidadao">
+            <h3>Quem é beneficiado</h3>
+            <p>
+              Pessoas com <strong>deficiência visual</strong> que precisam se deslocar
+              entre transporte, comércio e serviços no entorno da Estação Madureira
+              e da Avenida Ministro Edgard Romero.
+            </p>
+            <h3>O que essa pessoa precisa</h3>
+            <ul class="lista-check">
+              <li>Perceber objetos à frente antes do contato</li>
+              <li>Receber avisos que não dependem da visão</li>
+              <li>Saber onde estão as barreiras relatadas por outros moradores</li>
+            </ul>
+            <div class="ods" aria-label="Objetivos de Desenvolvimento Sustentável atendidos">
+              <span class="ods__item ods__item--10"><strong>ODS 10</strong> Redução das desigualdades</span>
+              <span class="ods__item ods__item--11"><strong>ODS 11</strong> Cidades e comunidades sustentáveis</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ 3. COMO FUNCIONA ============================ -->
+    <section class="secao" id="como-funciona" aria-labelledby="titulo-como">
+      <div class="container">
+        <header class="secao__cabecalho">
+          <p class="secao__numero">02 · Como funciona</p>
+          <h2 id="titulo-como">Medir, decidir e alertar, tudo no pulso.</h2>
+          <p>
+            A pulseira usa um sensor ultrassônico: ele emite um som que não ouvimos e
+            mede quanto tempo o eco leva para voltar. Um microcontrolador transforma
+            essa medida em um aviso, sem precisar de internet.
+          </p>
+        </header>
+
+        <ol class="passos">
+          <li class="passo">
+            <svg class="passo__icone" viewBox="0 0 48 48" aria-hidden="true">
+              <circle cx="12" cy="24" r="5" fill="currentColor"/>
+              <path d="M22 16a12 12 0 0 1 0 16M30 10a20 20 0 0 1 0 28M38 5a27 27 0 0 1 0 38" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/>
+            </svg>
+            <h3>1. Medir</h3>
+            <p>O sensor HC-SR04 mede a distância do objeto à frente 10 vezes por segundo.</p>
+          </li>
+          <li class="passo">
+            <svg class="passo__icone" viewBox="0 0 48 48" aria-hidden="true">
+              <rect x="10" y="10" width="28" height="28" rx="4" fill="none" stroke="currentColor" stroke-width="3"/>
+              <path d="M18 24h12M24 18v12" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+              <path d="M16 6v4M24 6v4M32 6v4M16 38v4M24 38v4M32 38v4" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+            </svg>
+            <h3>2. Decidir</h3>
+            <p>O microcontrolador descarta leituras inválidas, suaviza os dados e escolhe o estado.</p>
+          </li>
+          <li class="passo">
+            <svg class="passo__icone" viewBox="0 0 48 48" aria-hidden="true">
+              <path d="M12 20h6l10-8v24l-10-8h-6z" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/>
+              <path d="M33 18a8 8 0 0 1 0 12M37 14a14 14 0 0 1 0 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+            </svg>
+            <h3>3. Alertar</h3>
+            <p>Som e luz mudam de ritmo conforme a distância. No produto físico, vibração.</p>
+          </li>
+        </ol>
+
+        <h3 class="subtitulo">Os quatro estados</h3>
+        <ul class="estados">
+          <li class="estado estado--livre">
+            <span class="estado__nome">LIVRE</span>
+            <span class="estado__faixa">mais de 120 cm</span>
+            <span class="estado__resposta">Luz verde, sem som</span>
+          </li>
+          <li class="estado estado--atencao">
+            <span class="estado__nome">ATENÇÃO</span>
+            <span class="estado__faixa">de 51 a 120 cm</span>
+            <span class="estado__resposta">Luz amarela e bip espaçado</span>
+          </li>
+          <li class="estado estado--proximo">
+            <span class="estado__nome">PRÓXIMO</span>
+            <span class="estado__faixa">de 2 a 50 cm</span>
+            <span class="estado__resposta">Luz vermelha e bip rápido</span>
+          </li>
+          <li class="estado estado--falha">
+            <span class="estado__nome">FALHA</span>
+            <span class="estado__faixa">menos de 2 cm, mais de 400 cm ou sem eco</span>
+            <span class="estado__resposta">Alerta próprio. Nunca é tratado como "livre"</span>
+          </li>
+        </ul>
+
+        <div class="limites">
+          <h3>O que a pulseira <em>não</em> faz</h3>
+          <ul class="limites__lista">
+            <li><strong>Não substitui a bengala.</strong> Não detecta todos os buracos e desníveis.</li>
+            <li><strong>Não garante rota segura.</strong> Só percebe o que está na direção do pulso.</li>
+            <li><strong>Não faz navegação.</strong> O protótipo não tem GPS nem cálculo de rotas.</li>
+            <li><strong>Não é certificada.</strong> Uso real exigiria testes com pessoas e validação técnica.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ 4. SIMULADOR ============================ -->
+    <section class="secao secao--destaque" id="simulador" aria-labelledby="titulo-simulador">
+      <div class="container">
+        <header class="secao__cabecalho">
+          <p class="secao__numero">03 · Simulador</p>
+          <h2 id="titulo-simulador">Teste a lógica da pulseira.</h2>
+          <p>
+            Arraste o controle ou digite uma distância. A página usa exatamente as
+            mesmas regras do protótipo no Wokwi e do programa em Python.
+          </p>
+        </header>
+
+        <div class="simulador">
+          <div class="simulador__controles">
+            <label class="rotulo" for="distancia-faixa">Distância do objeto (cm)</label>
+            <input class="faixa" type="range" id="distancia-faixa"
+                   min="0" max="450" step="1" value="200"
+                   aria-describedby="dica-faixa">
+            <p class="dica" id="dica-faixa">
+              O controle vai de 0 a 450 cm para que você também veja o estado FALHA
+              (abaixo de 2 cm ou acima de 400 cm).
+            </p>
+
+            <label class="rotulo" for="distancia-numero">Ou digite um valor</label>
+            <div class="simulador__linha">
+              <input class="campo campo--numero" type="text" inputmode="decimal"
+                     id="distancia-numero" value="200" autocomplete="off"
+                     aria-describedby="dica-numero">
+              <span class="unidade">cm</span>
+            </div>
+            <p class="dica" id="dica-numero">Valores que não são números também viram FALHA.</p>
+
+            <p class="rotulo" id="rotulo-atalhos">Atalhos</p>
+            <div class="atalhos" role="group" aria-labelledby="rotulo-atalhos">
+              <button class="atalho" type="button" data-distancia="180">180 cm</button>
+              <button class="atalho" type="button" data-distancia="80">80 cm</button>
+              <button class="atalho" type="button" data-distancia="30">30 cm</button>
+              <button class="atalho" type="button" data-distancia="sem-eco">Sem eco</button>
+            </div>
+          </div>
+
+          <!-- Painel que o JavaScript atualiza. aria-live faz o leitor de tela anunciar a mudança. -->
+          <div class="painel painel--livre" id="painel" aria-live="polite">
+            <div class="painel__luz" aria-hidden="true"></div>
+            <p class="painel__estado" id="painel-estado">LIVRE</p>
+            <p class="painel__distancia" id="painel-distancia">200 cm</p>
+            <p class="painel__mensagem" id="painel-mensagem">
+              Sem objeto no alcance do sensor. Isso não garante que o caminho é seguro.
+            </p>
+            <p class="painel__som" id="painel-som">Som: desligado</p>
+          </div>
+        </div>
+
+        <!-- Régua das faixas: mostra onde o valor atual cai -->
+        <div class="regua" aria-hidden="true">
+          <div class="regua__barra">
+            <span class="regua__zona regua__zona--falha" style="--inicio: 0; --fim: 2"></span>
+            <span class="regua__zona regua__zona--proximo" style="--inicio: 2; --fim: 50"></span>
+            <span class="regua__zona regua__zona--atencao" style="--inicio: 50; --fim: 120"></span>
+            <span class="regua__zona regua__zona--livre" style="--inicio: 120; --fim: 400"></span>
+            <span class="regua__zona regua__zona--falha" style="--inicio: 400; --fim: 450"></span>
+            <span class="regua__marcador" id="regua-marcador"></span>
+          </div>
+          <div class="regua__legenda">
+            <span style="--pos: 0">0</span>
+            <span style="--pos: 50">50</span>
+            <span style="--pos: 120">120</span>
+            <span style="--pos: 400">400 cm</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ 5. COMUNIDADE ============================ -->
+    <section class="secao" id="comunidade" aria-labelledby="titulo-comunidade">
+      <div class="container">
+        <header class="secao__cabecalho">
+          <p class="secao__numero">04 · Comunidade</p>
+          <h2 id="titulo-comunidade">Viu uma barreira? Registre.</h2>
+          <p>
+            Cada relato torna visível um problema que precisa ser corrigido.
+            Não pedimos nome, CPF nem telefone.
+          </p>
+        </header>
+
+        <p class="faixa-aviso" role="note">
+          <strong>Demonstração:</strong> os registros abaixo são simulados e não
+          verificados. Ficam só nesta página e somem ao recarregar. Não são denúncias
+          oficiais nem um mapa real de obstáculos.
+        </p>
+
+        <div class="comunidade__grade">
+          <form class="formulario" id="formulario-barreira" novalidate>
+            <h3>Novo registro</h3>
+
+            <div class="campo-grupo">
+              <label class="rotulo" for="campo-tipo">Tipo de barreira <span class="obrigatorio">(obrigatório)</span></label>
+              <select class="campo" id="campo-tipo" name="tipo" aria-describedby="erro-tipo">
+                <option value="">Escolha uma opção</option>
+                <option value="Obstáculo fixo">Obstáculo fixo</option>
+                <option value="Piso irregular">Piso irregular</option>
+                <option value="Piso tátil danificado">Piso tátil danificado</option>
+                <option value="Obra ou interdição">Obra ou interdição</option>
+                <option value="Outro">Outro</option>
+              </select>
+              <p class="erro" id="erro-tipo"></p>
+            </div>
+
+            <div class="campo-grupo">
+              <label class="rotulo" for="campo-local">Referência do local <span class="obrigatorio">(obrigatório)</span></label>
+              <input class="campo" type="text" id="campo-local" name="local" maxlength="80"
+                     placeholder="Ex.: saída da Estação Madureira, lado do Mercadão"
+                     autocomplete="off" aria-describedby="erro-local">
+              <p class="erro" id="erro-local"></p>
+            </div>
+
+            <div class="campo-grupo">
+              <label class="rotulo" for="campo-descricao">Descrição curta <span class="obrigatorio">(obrigatório)</span></label>
+              <textarea class="campo" id="campo-descricao" name="descricao" rows="3" maxlength="200"
+                        placeholder="Descreva o obstáculo"
+                        aria-describedby="contador-descricao erro-descricao"></textarea>
+              <p class="dica" id="contador-descricao">0 de 200 caracteres</p>
+              <p class="erro" id="erro-descricao"></p>
+            </div>
+
+            <button class="botao botao--primario botao--largo" type="submit">Registrar barreira</button>
+            <p class="formulario__retorno" id="retorno-formulario" role="status"></p>
+          </form>
+
+          <div class="registros">
+            <div class="registros__topo">
+              <h3>Barreiras relatadas</h3>
+              <div class="filtro">
+                <label class="rotulo" for="filtro-tipo">Filtrar por tipo</label>
+                <select class="campo" id="filtro-tipo">
+                  <option value="todos">Todos os tipos</option>
+                  <option value="Obstáculo fixo">Obstáculo fixo</option>
+                  <option value="Piso irregular">Piso irregular</option>
+                  <option value="Piso tátil danificado">Piso tátil danificado</option>
+                  <option value="Obra ou interdição">Obra ou interdição</option>
+                  <option value="Outro">Outro</option>
+                </select>
+              </div>
+            </div>
+            <p class="registros__contagem" id="contagem-registros" aria-live="polite"></p>
+            <!-- Os itens abaixo aparecem mesmo sem JavaScript; o script recria a lista com os novos registros -->
+            <ul class="registros__lista" id="lista-registros">
+              <li class="registro">
+                <p class="registro__tipo">Piso tátil danificado</p>
+                <p class="registro__local">Saída da Estação Madureira, lado da Av. Ministro Edgard Romero</p>
+                <p class="registro__descricao">Piso tátil interrompido perto da escada de acesso.</p>
+                <p class="registro__selo">Relato simulado · não verificado</p>
+              </li>
+              <li class="registro">
+                <p class="registro__tipo">Obstáculo fixo</p>
+                <p class="registro__local">Calçada em frente ao Mercadão de Madureira</p>
+                <p class="registro__descricao">Poste e banca ocupando quase toda a largura da calçada.</p>
+                <p class="registro__selo">Relato simulado · não verificado</p>
+              </li>
+              <li class="registro">
+                <p class="registro__tipo">Obra ou interdição</p>
+                <p class="registro__local">Rua Carolina Machado, próximo à passarela</p>
+                <p class="registro__descricao">Tapume sem sinalização sonora bloqueando a passagem.</p>
+                <p class="registro__selo">Relato simulado · não verificado</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================ RODAPÉ ============================ -->
+  <footer class="rodape">
+    <div class="container rodape__grade">
+      <div class="rodape__marca">
+        <a class="marca marca--rodape" href="#inicio">
+          <img src="imagens/logo.svg" alt="" width="32" height="32">
+          <span>SenseWay <strong>RJ</strong></span>
+        </a>
+        <p>Tecnologia assistiva e colaboração cidadã contra as barreiras nas calçadas de Madureira.</p>
+        <p class="rodape__aviso">Protótipo acadêmico. Dados e registros demonstrativos.</p>
+      </div>
+
+      <div>
+        <h2 class="rodape__titulo">Navegação</h2>
+        <ul class="rodape__lista">
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#problema">O problema</a></li>
+          <li><a href="#como-funciona">Como funciona</a></li>
+          <li><a href="#simulador">Simulador</a></li>
+          <li><a href="#comunidade">Comunidade</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h2 class="rodape__titulo">Equipe</h2>
+        <ul class="rodape__lista">
+          <li>Samuel Dantas Silva de Medeiros · RM 576922</li>
+          <li>Felipe de Oliveira Corrêa · RM 574803</li>
+          <li>Turma 1ESSRQ-2026 · Engenharia de Software</li>
+        </ul>
+      </div>
+
+      <div>
+        <h2 class="rodape__titulo">Fontes</h2>
+        <ul class="rodape__lista">
+          <li>Câmara Municipal do Rio · audiência sobre calçadas, 04/09/2025</li>
+          <li>PROCON-RJ / SEDCON · fiscalização da Estação Madureira, 13/05/2026</li>
+          <li>AGETRANSP · fiscalização na Estação Madureira, 11/06/2024</li>
+          <li>Mobilize Brasil · reclamações de calçadas, 2025</li>
+          <li>Ilustrações e ícones: criados pela equipe</li>
+        </ul>
+      </div>
+    </div>
+    <div class="rodape__base">
+      <div class="container">
+        <p>FIAP · Global Solution 2026.2 · CitizenTech · ODS 10 e 11</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

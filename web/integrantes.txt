@@ -1,0 +1,7 @@
+SenseWay RJ - FIAP Global Solution 2026.2 - CitizenTech
+Disciplina: Front-end Design
+Turma: 1ESSRQ-2026 - Engenharia de Software - Rio de Janeiro
+
+Integrantes:
+- Samuel Dantas Silva de Medeiros - RM 576922
+- Felipe de Oliveira Corrêa - RM 574803
